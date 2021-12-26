@@ -126,6 +126,7 @@ section header h2 {
     text-transform: uppercase;
     letter-spacing: .25rem;
     font-weight: 900;
+    margin-bottom: 10px;
 }
 section header p {
     color: var(--gray-3);
@@ -303,6 +304,75 @@ section header p {
     align-items: center;
     text-align: center;
     gap: var(--gap-items);
+}
+
+#experience .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: var(--gap-items);
+}
+
+.timeline {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: var(--gap-items);
+    width: 100%;
+    max-width: 700px;
+}
+.timeline .timeline-items {
+    width: 100%;
+}
+.timeline .timeline-items a {
+    background: var(--primary-color);  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, var(--primary-color), var(--secondary-color));  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, var(--primary-color), var(--secondary-color)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-transform: uppercase;
+    letter-spacing: .25rem;
+}
+.timeline .timeline-items .timeline-item {
+    display: flex;
+}
+.timeline .timeline-items .timeline-item > div {
+    flex: 1 0 0%;
+    padding-bottom: var(--gap-items);
+}
+.timeline .timeline-items .timeline-item:last-child > div {
+    padding-bottom: 0;
+}
+.timeline .timeline-items .timeline-item .col-right {
+    text-align: left;
+}
+.timeline .timeline-items .timeline-item .col-left {
+    text-align: right;
+}
+.timeline .timeline-items .timeline-item .timeline-separator {
+    padding-right: 20px;
+    border-right: 1px solid var(--gray-3);
+    margin-right: 20px;
+    position: relative;
+}
+.timeline .timeline-items .timeline-item .timeline-separator .mark {
+    width: 15px;
+    height: 15px;
+    border: 1px solid var(--gray-3);
+    border-radius: 50%;
+    background-color: var(--gray-4);
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translateX(50%);
+}
+@media (max-width: 768px) {
+    .timeline .timeline-items .timeline-item {
+        font-size: .8rem;
+    }
 }
 
 #footer {
