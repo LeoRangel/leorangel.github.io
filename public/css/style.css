@@ -119,7 +119,6 @@ section header {
 
 .navbar {
     width: 100%;
-    background-color: white;
     display: flex;
     justify-content: center;
 }
@@ -232,6 +231,21 @@ section header {
     }
 }
 
+#footer {
+    background-color: var(--gray-3);
+    color: white;
+}
+#footer .navbar ul a :is(span, i) {
+    color: white;
+}
+#footer .footer-bar {
+    background-color: var(--gray-1);
+    padding: 20px;
+    text-align: center;
+}
+#footer .footer-bar small {
+    color: white;
+}
 
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {}
