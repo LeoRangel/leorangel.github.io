@@ -18,15 +18,65 @@
     <meta name="robots" content="index,follow">
 
     <link rel="stylesheet" href="public/css/style.css">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
 </head>
 
 <body>
     <header id="header">
-        <nav id="navbar">
+        <div class="container">
 
-        </nav>
+            <nav class="navbar hidden-when-md">
+                <ul>
+                    <li><a href="#profile">Perfil</a></li>
+                    <li><a href="#infos">Informações</a></li>
+                    <li><a href="#skills">Habilidades</a></li>
+                    <li><a href="#experience">Experiência</a></li>
+                    <li><a href="#portfolio">Portfólio</a></li>
+                    <li><a href="#cv">Currículo</a></li>
+                </ul>
+            </nav>
 
-        <h1>Leandro Rangel</h1>
+            <button class="open-sidebar-btn display-when-md" onclick="sidebar_open()">
+                <i class="fas fa-bars"></i>
+            </button>
+
+            <div class="jumbotron">
+                <img src="public/assets/image/img-header.png" width="100px" height="100px" alt="Foto de Leandro Rangel">
+                <h1>
+                    Hi there, i'm<br>
+                    <strong>Leandro Rangel</strong>
+                </h1>
+                <p class="separator"></p>
+                <p>Desenvolvedor Front-End</p>
+            </div>
+
+            <nav class="navbar">
+                <ul>
+                    <li>
+                        <a href="https://github.com/LeoRangel" target="_blank" rel="noopener noreferrer">
+                            <i class="fab fa-github-square"></i>
+                            <span class="hidden-when-md">Github</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.linkedin.com/in/leandro-ranggel/" target="_blank"
+                            rel="noopener noreferrer">
+                            <i class="fab fa-linkedin"></i>
+                            <span class="hidden-when-md">Linkedin</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" target="_blank" rel="noopener noreferrer">
+                            <i class="fab fa-twitter-square"></i>
+                            <span class="hidden-when-md">Twitter</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+
+        </div>
     </header>
 
     <main>
@@ -56,7 +106,6 @@
     </main>
 
     <footer>
-
     </footer>
 
     <script src="public/js/script.js"></script>
