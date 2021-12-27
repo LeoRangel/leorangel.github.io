@@ -18,6 +18,7 @@
     /* Paddings */
     --pd-container: 60px;
     --pd-card: 25px;
+    --pd-btn: 1.25rem;
 
     /* Margins */
     --m-header: 50px;
@@ -28,7 +29,7 @@
     --gap-items-2: 25px;
     --gap-items-3: 15px;
     --gap-navbar-items: 50px;
-
+    
     /* Radius */
     --border-radius: .45rem;
     --btn-border-radius: .65rem;
@@ -38,12 +39,13 @@
     :root {
         /* Paddings */
         --pd-container: 50px;
-    
+        
         /* Margins */
         --m-header: 40px;
-
+        
         /* Gaps */
         --gap-items-1: 40px;
+        --gap-navbar-items: 40px;
     }
 }
 
@@ -61,7 +63,7 @@ body {
     position: relative;
 }
 
-p, span {
+p, span, h3, h4, h5, h6 {
     color: var(--gray-2);
 }
 
@@ -156,7 +158,7 @@ section header p {
     text-transform: uppercase;
     letter-spacing: .25rem;
     font-size: .85rem;
-    padding: 1.5rem;
+    padding: var(--pd-btn);
     border-radius: var(--btn-border-radius);
     display: flex;
     flex-wrap: wrap;
@@ -202,10 +204,10 @@ section header p {
     font-size: .75rem;
     display: flex;
     align-items: center;
+    gap: var(--m-texts);
 }
 .navbar ul a i{
     font-size: 1.25rem;
-    margin-right: var(--m-texts);
 }
 
 .open-sidebar-btn{
