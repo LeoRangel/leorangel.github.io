@@ -22,13 +22,14 @@
 
     /* Margins */
     --m-header: 50px;
-    --m-texts: 10px;
-
+    --m-text: 10px;
+    
     /* Gaps */
     --gap-items-1: 50px;
     --gap-items-2: 25px;
     --gap-items-3: 15px;
     --gap-navbar-items: 50px;
+    --gap-text: 10px;
     
     /* Radius */
     --border-radius: .45rem;
@@ -145,7 +146,7 @@ small {
     text-transform: uppercase;
     letter-spacing: .25rem;
     font-weight: 900;
-    margin-bottom: var(--m-texts);
+    margin-bottom: var(--m-text);
 }
 .section-header p {
     color: var(--gray-3);
@@ -165,7 +166,7 @@ small {
     justify-content: center;
     align-items: center;
     text-align: center;
-    gap: var(--m-texts);
+    gap: var(--gap-text);
 }
 .my-btn i,
 .my-btn-white-outline i{
@@ -204,7 +205,7 @@ small {
     font-size: .75rem;
     display: flex;
     align-items: center;
-    gap: var(--m-texts);
+    gap: var(--gap-text);
 }
 .navbar ul a i{
     font-size: 1.25rem;
@@ -291,6 +292,9 @@ small {
 .timeline .timeline-items .timeline-item > div {
     flex: 1 0 0%;
     padding-bottom: var(--gap-items-2);
+    display: flex;
+    flex-direction: column;
+    gap: var(--gap-text);
 }
 .timeline .timeline-items .timeline-item:last-child > div {
     padding-bottom: 0;
@@ -318,11 +322,11 @@ small {
     right: 0;
     transform: translateX(50%);
 }
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
     .timeline .timeline-items .timeline-item {
         font-size: .8rem;
     }
-}
+} */
 
 .card {
     width: 100%;
@@ -367,7 +371,7 @@ small {
     color: var(--gray-2);
     display: flex;
     align-items: center;
-    gap: var(--m-texts);
+    gap: var(--gap-text);
 }
 .card .card-content a:hover{
     text-decoration: underline;
@@ -413,7 +417,7 @@ small {
     font-weight: 300;
 }
 #header .jumbotron img {
-    margin-bottom: var(--m-texts);
+    margin-bottom: var(--m-text);
 }
 #header .jumbotron h1 strong{
     font-size: 3.5rem;
