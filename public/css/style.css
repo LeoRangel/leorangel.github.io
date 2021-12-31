@@ -3,17 +3,18 @@
 :root {
     /* Fonts */
     --primary-font: 'Roboto', sans-serif;
+    --secondary-font: 'Roboto', serif;
 
     /* Colors */
-    --primary-color: #11998e;
-    --secondary-color: #38EF7D;
+    --primary-color: #11978c;
+    --secondary-color: hsl(143, 85%, 58%);
     --primary-color-70: rgba(17, 153, 142, .7);
     --secondary-color-70: rgba(56, 239, 125, .7);
-    --gray-1: #263138ff;
-    --gray-2: #425561ff;
-    --gray-3: #6d8a9cff;
-    --gray-4: #b6c5cdff;
-    --gray-5: #dbe2e6ff;
+    --gray-1: #25292dff;
+    --gray-2: #40474fff;
+    --gray-3: #6e7a87ff;
+    --gray-4: #b0b8bfff;
+    --gray-5: #dde0e3ff;
     
     /* Paddings */
     --pd-container: 60px 20px;
@@ -63,10 +64,14 @@ html {
 
 body {
     font-size: 16px;
-    font-family: var(--primary-font);
+    font-family: var(--secondary-font);
     color: var(--gray-1);
     position: relative;
     overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--primary-font);
 }
 
 p, span, h3, h4, h5, h6 {
