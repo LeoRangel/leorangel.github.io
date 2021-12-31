@@ -24,10 +24,56 @@
 </head>
 
 <body>
+    <button id="open-sidebar-btn" class="display-when-md">
+        <i class="fas fa-bars"></i>
+    </button>
+
+    <nav id="sidebar" class="sidebar">
+        <div class="container">
+            <button id="close-sidebar-btn">
+                <i class="fas fa-times"></i>
+            </button>
+
+            <ul>
+                <li><a href="#profile">Perfil</a></li>
+                <li><a href="#infos">Informações</a></li>
+                <li><a href="#skills">Habilidades</a></li>
+                <li><a href="#experience">Experiência</a></li>
+                <li><a href="#portfolio">Portfólio</a></li>
+                <li><a href="#cv">Currículo</a></li>
+            </ul>
+
+            <ul class="social-list">
+                <li>
+                    <a href="https://github.com/LeoRangel" target="_blank" rel="noopener noreferrer">
+                        <i class="fab fa-github-square"></i>
+                        <span class="hidden-when-md">Github</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.linkedin.com/in/leandro-ranggel/" target="_blank" rel="noopener noreferrer">
+                        <i class="fab fa-linkedin"></i>
+                        <span class="hidden-when-md">Linkedin</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" target="_blank" rel="noopener noreferrer">
+                        <i class="fab fa-twitter-square"></i>
+                        <span class="hidden-when-md">Twitter</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" target="_blank" rel="noopener noreferrer">
+                        <i class="fab fa-behance-square"></i>
+                        <span class="hidden-when-md">Behance</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
 
     <header id="header">
         <div class="container">
-
             <nav class="navbar">
                 <div class="hidden-when-md">
                     <ul>
@@ -41,10 +87,6 @@
                 </div>
             </nav>
 
-            <button class="open-sidebar-btn display-when-md" onclick="sidebar_open()">
-                <i class="fas fa-bars"></i>
-            </button>
-
             <div class="jumbotron">
                 <img src="public/assets/image/img-header.png" width="100px" height="100px" alt="Foto de Leandro Rangel">
                 <h1>
@@ -56,7 +98,7 @@
             </div>
 
             <nav class="navbar">
-                <ul>
+                <ul class="social-list">
                     <li>
                         <a href="https://github.com/LeoRangel" target="_blank" rel="noopener noreferrer">
                             <i class="fab fa-github-square"></i>
@@ -84,7 +126,6 @@
                     </li>
                 </ul>
             </nav>
-
         </div>
     </header>
 
@@ -602,7 +643,7 @@
     <footer id="footer">
         <div class="container">
             <nav class="navbar">
-                <ul>
+                <ul class="social-list">
                     <li>
                         <a href="https://github.com/LeoRangel" target="_blank" rel="noopener noreferrer">
                             <i class="fab fa-github-square"></i>
@@ -633,7 +674,7 @@
         </div>
         <div class="footer-bar">
             <small>
-                2021 | Desenvolvido por Leandro Rangel
+                <time>2022</time> | Desenvolvido por Leandro Rangel
             </small>
         </div>
     </footer>
