@@ -586,8 +586,8 @@ small {
     width: 100%;
     padding: var(--pd-card);
     background: var(--primary-color-70);  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, var(--primary-color-70), var(--secondary-color-70)), url("../assets/image/cv-img.jpg");  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, var(--primary-color-70), var(--secondary-color-70)), url("../assets/image/cv-img.jpg"); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: -webkit-linear-gradient(to right, var(--primary-color-70), var(--secondary-color-70)), url("../assets/image/img-cv.webp");  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, var(--primary-color-70), var(--secondary-color-70)), url("../assets/image/img-cv.webp"); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     /* -webkit-mask-image: linear-gradient(to right, var(--primary-color-70), var(--secondary-color-70)); */
     background-size: cover;
     background-repeat: no-repeat;
