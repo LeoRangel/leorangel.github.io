@@ -538,6 +538,9 @@ small {
     }
 }
 
+#infos address {
+    font-style: normal;
+}
 #infos .info-card {
     display: flex;
     flex-direction: column;
