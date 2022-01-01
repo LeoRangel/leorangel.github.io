@@ -3,7 +3,7 @@
 :root {
     /* Fonts */
     --primary-font: 'Roboto', sans-serif;
-    --secondary-font: 'Roboto', serif;
+    --secondary-font: 'Roboto', sans-serif;
 
     /* Colors */
     --primary-color: #11978c;
@@ -12,7 +12,7 @@
     --secondary-color-70: rgba(56, 239, 125, .7);
     --gray-1: #25292dff;
     --gray-2: #40474fff;
-    --gray-3: #6e7a87ff;
+    --gray-3: #65707bff;
     --gray-4: #b0b8bfff;
     --gray-5: #dde0e3ff;
     
@@ -90,6 +90,19 @@ small {
     background: var(--primary-color);  /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, var(--primary-color), var(--secondary-color));  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, var(--primary-color), var(--secondary-color)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.visually-hidden{
+    /* This class hides an element in all devices except for the Screen Readers */
+    position: absolute!important;
+    width: 1px!important;
+    height: 1px!important;
+    padding: 0!important;
+    margin: -1px!important;
+    overflow: hidden!important;
+    clip: rect(0,0,0,0)!important;
+    white-space: nowrap!important;
+    border: 0!important;
 }
 
 .wrap-reverse {
