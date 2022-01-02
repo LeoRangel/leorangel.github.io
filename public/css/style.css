@@ -207,6 +207,7 @@ small {
     align-items: center;
     text-align: center;
     gap: var(--gap-text);
+    cursor: pointer;
 }
 .my-btn i,
 .my-btn-white-outline i{
@@ -229,6 +230,31 @@ small {
 }
 .my-btn-white-outline svg path {
     fill: white;
+}
+
+#back-to-top-btn {
+    background: transparent;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    transition: background-color .3s, opacity .5s, visibility .5s;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 1000;
+}
+#back-to-top-btn.show-btn {
+    opacity: 1;
+    visibility: visible;
+}
+#back-to-top-btn svg {
+    width: 1.5rem;
+    height: auto;
+}
+#back-to-top-btn svg path {
+    fill: var(--gray-1);
 }
 
 .navbar {
@@ -280,6 +306,9 @@ small {
     z-index: 999;
     transition: all 0.5s ease 0s;
     -webkit-transition: all 0.5s ease 0s;
+}
+.sidebar.open-sidebar {
+    right: 0;
 }
 .sidebar .container {
     height: 100%;

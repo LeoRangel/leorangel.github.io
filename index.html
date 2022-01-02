@@ -34,7 +34,7 @@
 </head>
 
 <body>
-    <button id="open-sidebar-btn" class="display-when-md">
+    <button id="open-sidebar-btn" class="display-when-md" title="Abrir menu lateral">
         <!-- <i class="fas fa-bars"></i> -->
         <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="bars"
             class="svg-inline--fa fa-bars fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
@@ -42,12 +42,23 @@
                 d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z">
             </path>
         </svg>
-        <span class="visually-hidden">Abrir menu</span>
+        <span class="visually-hidden">Abrir menu lateral</span>
+    </button>
+
+    <button id="back-to-top-btn" title="Voltar para o topo">
+        <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="chevron-circle-up"
+            class="svg-inline--fa fa-chevron-circle-up fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 512 512">
+            <path fill="currentColor"
+                d="M8 256C8 119 119 8 256 8s248 111 248 248-111 248-248 248S8 393 8 256zm231-113.9L103.5 277.6c-9.4 9.4-9.4 24.6 0 33.9l17 17c9.4 9.4 24.6 9.4 33.9 0L256 226.9l101.6 101.6c9.4 9.4 24.6 9.4 33.9 0l17-17c9.4-9.4 9.4-24.6 0-33.9L273 142.1c-9.4-9.4-24.6-9.4-34 0z">
+            </path>
+        </svg>
+        <span class="visually-hidden">Voltar para o topo</span>
     </button>
 
     <nav id="sidebar" class="sidebar">
         <div class="container">
-            <button id="close-sidebar-btn">
+            <button id="close-sidebar-btn" title="Fechar menu lateral">
                 <!-- <i class="fas fa-times"></i> -->
                 <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="times"
                     class="svg-inline--fa fa-times fa-w-11" role="img" xmlns="http://www.w3.org/2000/svg"
@@ -56,7 +67,7 @@
                         d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z">
                     </path>
                 </svg>
-                <span class="visually-hidden">Fechar menu</span>
+                <span class="visually-hidden">Fechar menu lateral</span>
             </button>
 
             <ul>
