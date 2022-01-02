@@ -212,6 +212,11 @@ small {
 .my-btn-white-outline i{
     font-size: 1rem;
 }
+.my-btn svg,
+.my-btn-white-outline svg{
+    width: .8rem;
+    height: auto;
+}
 .my-btn {
     color: white;
     background: var(--primary-color);  /* fallback for old browsers */
@@ -221,6 +226,9 @@ small {
 .my-btn-white-outline{
     color: white;
     border: 1px solid white;
+}
+.my-btn-white-outline svg path {
+    fill: white;
 }
 
 .navbar {
@@ -235,6 +243,7 @@ small {
     flex-wrap: wrap;
     text-align: center;
     justify-content: center;
+    align-items: center;
     gap: var(--gap-navbar-items);
 }
 .navbar ul a{
@@ -249,6 +258,13 @@ small {
 }
 .navbar ul a i{
     font-size: 1.25rem;
+}
+.navbar ul a svg{
+    width: 1rem;
+    height: auto;
+}
+.navbar ul a svg path{
+    fill: var(--gray-2);
 }
 
 .sidebar {
@@ -280,7 +296,6 @@ small {
     align-items: center;
     gap: var(--gap-items-1);
 }
-.sidebar ul li {}
 .sidebar ul a {
     text-decoration: none;
     color: white;
@@ -294,9 +309,20 @@ small {
 .sidebar ul a i {
     font-size: 1.25rem;
 }
+.sidebar ul a i{
+    font-size: 1.25rem;
+}
+.sidebar ul a svg{
+    width: 1rem;
+    height: auto;
+}
+.sidebar ul a svg path{
+    fill: white;
+}
 .sidebar .social-list {
     margin: var(--gap-items-1) 0 0 0;
     flex-direction: row;
+    align-items: center;
 }
 
 #open-sidebar-btn,
@@ -312,14 +338,25 @@ small {
     border: none;
     font-size: 1.25rem;
 }
+#open-sidebar-btn svg,
+#close-sidebar-btn svg{
+    width: 1.1rem;
+    height: auto;
+}
 #open-sidebar-btn{
     color: var(--gray-3);
     /* border: 1px solid var(--gray-3); */
     z-index: 998;
 }
+#open-sidebar-btn svg path{
+    fill: var(--gray-3);
+}
 #close-sidebar-btn {
     color: white;
     /* border: 1px solid white; */
+}
+#close-sidebar-btn svg path{
+    fill: white;
 }
 
 .icon {
@@ -333,13 +370,19 @@ small {
     color: white;
 }
 .icon :is(i, svg){
-    font-size: 1.25rem;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
-.icon svg path{
+.icon i {
+    font-size: 1.25rem;
+}
+.icon svg {
+    width: 1.25rem;
+    height: auto;
+}
+.icon svg :is(path, g) {
     fill: white;
 }
 
@@ -622,6 +665,9 @@ small {
     justify-content: center;
     gap: var(--gap-items-1);
 }
+#portfolio svg {
+    width: .8rem;
+}
 
 #cv .cv-card{
     width: 100%;
@@ -667,6 +713,9 @@ small {
 }
 #footer .navbar ul a :is(span, i) {
     color: white;
+}
+#footer .navbar ul a svg path {
+    fill: white;
 }
 #footer .footer-bar {
     background-color: var(--gray-1);
