@@ -191,6 +191,9 @@ small {
 .section-header p {
     color: var(--gray-3);
 }
+.section-footer {
+    margin-top: var(--m-header);
+}
 
 .my-btn,
 .my-btn-white-outline{
@@ -677,6 +680,9 @@ small {
     align-items: center;
     text-align: center;
     gap: var(--gap-items-2);
+}
+#skills .section-footer p {
+    max-width: 500px;
 }
 
 #experience .section-content {
