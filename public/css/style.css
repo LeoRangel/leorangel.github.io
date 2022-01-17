@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;&display=swap'); */
 
 :root {
     /* Fonts */
@@ -186,7 +186,7 @@ small {
 .section-header h2 {
     text-transform: uppercase;
     letter-spacing: .25rem;
-    font-weight: 900;
+    font-weight: 700;
     margin-bottom: var(--m-text);
 }
 .section-header p {
