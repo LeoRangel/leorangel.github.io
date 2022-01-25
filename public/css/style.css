@@ -540,6 +540,9 @@ small {
     width: 100%;
     /* max-width: 700px; */
 }
+.timeline a {
+    color: inherit;
+}
 .timeline .timeline-items {
     width: 100%;
 }
