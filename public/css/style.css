@@ -547,7 +547,7 @@ small {
     display: flex;
 }
 .timeline .timeline-items .timeline-item > div {
-    flex: 1 0 0%;
+    /* flex: 1 0 0%; */
     padding-bottom: var(--gap-items-2);
     display: flex;
     flex-direction: column;
@@ -558,9 +558,12 @@ small {
 }
 .timeline .timeline-items .timeline-item .col-right {
     text-align: left;
+    flex: 75%;
 }
 .timeline .timeline-items .timeline-item .col-left {
     text-align: right;
+    flex: 25%;
+    font-size:.8rem;
 }
 .timeline .timeline-items .timeline-item .timeline-separator {
     padding-right: 20px;
