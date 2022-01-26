@@ -561,12 +561,15 @@ small {
 }
 .timeline .timeline-items .timeline-item .col-right {
     text-align: left;
-    flex: 75%;
+    /* flex: 75%; */
+    flex: 1 0 0%;
+    max-width: 320px;
 }
 .timeline .timeline-items .timeline-item .col-left {
     text-align: right;
-    flex: 25%;
+    /* flex: 25%; */
     font-size:.8rem;
+    width: 100px;
 }
 .timeline .timeline-items .timeline-item .timeline-separator {
     padding-right: 20px;
@@ -585,11 +588,11 @@ small {
     right: 0;
     transform: translateX(50%);
 }
-/* @media (max-width: 768px) {
-    .timeline .timeline-items .timeline-item {
-        font-size: .8rem;
+@media (max-width: 768px) {
+    .timeline .timeline-items .timeline-item .col-left {
+        width: 80px;
     }
-} */
+}
 
 .card {
     width: 100%;
