@@ -469,6 +469,7 @@ small {
     background: -webkit-linear-gradient(to right, var(--primary-color), var(--secondary-color));  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, var(--primary-color), var(--secondary-color)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     color: white;
+    border: none;
 }
 .icon :is(i, svg){
     position: absolute;
@@ -502,7 +503,7 @@ small {
     opacity: 0;
     transition: opacity .6s;
 }
-.tooltip:hover .tooltip-text {
+.tooltip:is(:hover, :focus) .tooltip-text {
     visibility: visible;
     opacity: 1;
 }
