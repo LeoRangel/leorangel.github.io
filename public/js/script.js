@@ -1,9 +1,27 @@
 //Get elements
+const getToggleThemeBtns = document.getElementsByClassName("toggle-theme-btn");
+const toggleThemeBtns = [...getToggleThemeBtns]; // Transforming list of elements into an array
 const getfloatingBtns = document.getElementsByClassName("floating-btn");
 const floatingBtns = [...getfloatingBtns]; // Transforming list of elements into an array
 const backToTopBtn = document.getElementById("back-to-top-btn");
 const sidebar = document.getElementById("sidebar");
 const overlay = document.getElementById("overlay");
+
+// Set theme mode on load
+function setThemeOnLoad() {
+    const storageTheme = localStorage.getItem('theme');
+    const theme = storageTheme ?? 'light';
+    localStorage.setItem('theme', theme);
+    document.documentElement.setAttribute('data-theme', theme);
+}
+
+// Toggle theme button event
+function toggleTheme() {
+    const storageTheme = localStorage.getItem('theme');
+    const theme = (storageTheme === 'light' ? 'dark' : 'light');
+    localStorage.setItem('theme', theme);
+    document.documentElement.setAttribute('data-theme', theme);
+}
 
 // When the user clicks on the button, scroll to the top of the document
 const backToTopFunction = () => {
@@ -35,6 +53,12 @@ const sidebar_close = () => {
 }
 
 window.onload = () => {
+    // Set theme mode on load
+    setThemeOnLoad();
+
+    // Set toggle theme buttons event
+    toggleThemeBtns.map((btn) => btn.addEventListener('click', () => toggleTheme()));
+
     // Set 'open sidebar' button event
     document.querySelector('#open-sidebar-btn')
         .addEventListener('click', () => sidebar_open());
@@ -56,7 +80,3 @@ window.onload = () => {
 };
 
 window.onscroll = () => scrollFunction();
-
-
-
-
